@@ -1,0 +1,33 @@
+#!/bin/bash
+
+runvasp="mpirun -np x executable_path"
+
+# ensure that this sequence of MD runs is reproducible
+cp POSCAR.init POSCAR
+cp INCAR.init INCAR
+rseed="RANDOM_SEED =         311137787                0                0"
+echo $rseed >> INCAR
+
+
+i=1
+while [ $i -le 50 ] 
+do
+
+  # start vasp
+  $runvasp
+
+  # ensure that this sequence of MD runs is reproducible
+  rseed=$(grep RANDOM_SEED REPORT |tail -1) 
+  cp INCAR.init INCAR
+  echo $rseed >> INCAR
+
+  # use the last configuration generated in the previous
+  # run as initial configuration for the next run
+  cp CONTCAR POSCAR
+
+  # backup some important files
+  cp REPORT REPORT.$i
+  cp vasprun.xml vasprun.xml.$i
+
+  let i=i+1
+done
