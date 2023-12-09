@@ -33,19 +33,6 @@
 
 
 
-## 微信体验交流群
-
-加入ChatGPT体验交流群，与AI技术领域的专家和爱好者一起探讨最前沿的信息！与志同道合的人交流，共同提升你的知识水平！
-
-项目合作洽谈请联系微信 [点我](https://mp.weixin.qq.com/s/Ir7CadEXQnscxa1ZjDdOyw)   （请注明来意，如有关于仓库问题需讨论请参考下文入群讨论）。
-
-|                  直接加群                  |               如果前面的过期，加我拉你入群               |                          AI中文指南公众号                          |
-|:--------------------------------------:| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/PlexPt/chatgpt-java/assets/15922823/7118fe56-b07f-4be4-a69c-c8b44ac10c43" width="300"/> | <img src="https://user-images.githubusercontent.com/15922823/230634011-289efbe1-f2b1-4b1e-bddb-f56f5ea6f5f6.jpg" width="300"/> |  <img src="https://user-images.githubusercontent.com/15922823/218004565-bb632624-b376-4f01-8ce2-d7065107bf4a.png" width="300"/> |
-
- 
-
-
 # 正经指南
 
 直接复制粘贴使用
